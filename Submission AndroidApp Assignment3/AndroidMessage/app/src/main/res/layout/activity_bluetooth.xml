@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/messagebg">
+
+    <LinearLayout
+        android:id="@+id/textingArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <EditText
+            android:id="@+id/editData"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Hello"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/btnSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="buttonToSendMessage"
+            android:text="Send" />
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/device_list"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_above="@+id/textingArea">
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/textMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hey"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/device_list" />
+
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">EmergencyUtility</string>
+    <string name="title_activity_location_service">Map</string>
+    <string name="title_activity_get_current_gpslocation">GetCurrentGPSLocation</string>
+    <string name="intro_text">Long click to exit the map.</string>
+    <string name="title_activity_maps">Map</string>
+</resources>
